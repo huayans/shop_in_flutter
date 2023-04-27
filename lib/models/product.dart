@@ -14,7 +14,7 @@ class Product {
     required this.imgUrl,
     this.isFavorite = false,
   });
-
+  //toggle significa alternar
   void toggleFavorite() {
     isFavorite = !isFavorite;
   }
