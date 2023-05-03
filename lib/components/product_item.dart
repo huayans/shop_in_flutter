@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:shop/models/product.dart';
 
 class ProductItem extends StatelessWidget {
@@ -19,6 +18,7 @@ class ProductItem extends StatelessWidget {
           backgroundColor: Colors.black87,
           leading: IconButton(
             icon: const Icon(Icons.favorite),
+            color: Theme.of(context).colorScheme.secondary,
             onPressed: () {},
           ),
           title: Text(
@@ -27,9 +27,8 @@ class ProductItem extends StatelessWidget {
           ),
           trailing: IconButton(
             onPressed: () {},
-            icon: const Icon(
-              Icons.shopping_cart,
-            ),
+            icon: const Icon(Icons.shopping_cart),
+            color: Theme.of(context).colorScheme.secondary,
           ),
         ),
         child: Image.network(
